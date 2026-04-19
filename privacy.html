@@ -1,100 +1,128 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>プライバシーポリシー | サク宣</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      line-height: 1.8;
-      margin: 0;
-      background: #f7f7f7;
-      color: #111;
-    }
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 20px 80px;
-    }
-    h1, h2 {
-      line-height: 1.4;
-    }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-    h2 {
-      font-size: 20px;
-      margin-top: 40px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 20px;
-      padding: 28px 24px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-    }
-    .meta {
-      color: #666;
-      font-size: 14px;
-      margin-bottom: 24px;
-    }
-    a {
-      color: #0a84ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サク宣 プライバシーポリシー / Privacy Policy</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 760px;
+    padding: 0 20px;
+    color: #333;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 1rem; }
+  h2 { margin-top: 2rem; font-size: 1.3rem; border-left: 4px solid #6c8; padding-left: 8px; }
+  .lang-switch {
+    margin-bottom: 30px;
+  }
+  .lang-switch button {
+    padding: 6px 14px;
+    margin-right: 8px;
+    border: 1px solid #bbb;
+    background: #f7f7f7;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .lang-switch button.active {
+    background: #6c8;
+    color: #fff;
+    border-color: #6c8;
+  }
+</style>
+<script>
+  function switchLang(lang) {
+    document.getElementById("ja").style.display = lang === "ja" ? "block" : "none";
+    document.getElementById("en").style.display = lang === "en" ? "block" : "none";
+    document.getElementById("btn-ja").classList.toggle("active", lang === "ja");
+    document.getElementById("btn-en").classList.toggle("active", lang === "en");
+  }
+</script>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <h1>プライバシーポリシー</h1>
-      <div class="meta">最終更新日: 2026年4月20日</div>
 
-      <p>
-        サク宣（以下、「本アプリ」）は、ユーザーのプライバシーを尊重し、
-        個人情報の保護に努めます。
-      </p>
+<div class="lang-switch">
+  <button id="btn-ja" class="active" onclick="switchLang('ja')">日本語</button>
+  <button id="btn-en" onclick="switchLang('en')">English</button>
+</div>
 
-      <h2>1. 取得する情報について</h2>
-      <p>
-        本アプリは、ユーザーが選択した動画や画像を端末内で処理します。
-        これらのコンテンツはユーザーの操作に基づいてのみ利用されます。
-      </p>
+<!-- ▼ 日本語版 -->
+<div id="ja">
+<h1>サク宣 プライバシーポリシー</h1>
+<p>最終更新日：2026年4月</p>
 
-      <h2>2. データの処理について</h2>
-      <p>
-        本アプリで選択された動画・画像・入力テキストは、原則として端末内で処理されます。
-        開発者のサーバーにアップロードされることはありません。
-      </p>
+<p>本アプリ「サク宣 / SakuSen」はEri Takemiya（以下「開発者」）が提供するアプリケーションです。ユーザーのプライバシーを尊重し、以下の通りプライバシーポリシーを定めます。</p>
 
-      <h2>3. 収集しない情報</h2>
-      <p>本アプリは、以下の目的でユーザー情報を収集しません。</p>
-      <ul>
-        <li>広告配信</li>
-        <li>トラッキング</li>
-        <li>外部サーバーへの動画・画像アップロード</li>
-      </ul>
+<h2>1. 収集する情報</h2>
+<ul>
+  <li>ユーザーが選択した動画・画像・入力したテキスト（端末内処理）</li>
+  <li>Apple が提供する匿名の診断データ（ユーザーが許可した場合のみ）</li>
+</ul>
+<p>開発者は、氏名、住所、電話番号などの個人情報を直接収集しません。</p>
 
-      <h2>4. アプリ内課金について</h2>
-      <p>
-        本アプリは App Store のアプリ内課金を利用する場合があります。
-        課金処理は Apple により行われ、開発者がクレジットカード情報を直接取得することはありません。
-      </p>
+<h2>2. データの保存と処理方法</h2>
+<p>本アプリで扱う動画・画像・入力テキストは、原則としてユーザーの端末内で処理されます。開発者の外部サーバーへアップロードされることはありません。</p>
 
-      <h2>5. お問い合わせ</h2>
-      <p>
-        本ポリシーに関するお問い合わせは、
-        <p>メール：takepenco&#64;gmail&#46;com</p>
-        までご連絡ください。
-      </p>
-    </div>
-  </div>
+<h2>3. 第三者提供</h2>
+<p>サク宣は以下の行為を行いません：</p>
+<ul>
+  <li>ユーザーデータの外部送信</li>
+  <li>広告ネットワーク等への情報提供</li>
+  <li>追跡目的のSDK利用</li>
+</ul>
+
+<h2>4. アプリ内課金</h2>
+<p>課金処理は Apple の StoreKit により管理され、クレジットカード情報などを開発者が取得することはありません。</p>
+
+<h2>5. ユーザーの権利</h2>
+<p>ユーザーは、端末内のプロジェクトや出力データを任意に削除できます。また、アプリをアンインストールすることで、端末内の保存データは削除されます。</p>
+
+<h2>6. プライバシーポリシーの変更</h2>
+<p>本ポリシーは必要に応じて更新されます。重要な変更がある場合は、アプリ内またはストアページ等で告知します。</p>
+
+<h2>7. お問い合わせ</h2>
+<p>メール：takepenco&#64;gmail&#46;com</p>
+</div>
+
+<!-- ▼ 英語版 -->
+<div id="en" style="display:none;">
+<h1>SakuSen Privacy Policy</h1>
+<p>Last Updated: April 2026</p>
+
+<p>The application “SakuSen” is provided by the Eri Takemiya (“the Developer”). We respect user privacy and outline our policy as follows.</p>
+
+<h2>1. Information We Collect</h2>
+<ul>
+  <li>Videos, images, and text selected or entered by the user (processed on-device)</li>
+  <li>Anonymous diagnostic data provided by Apple (only if the user opts in)</li>
+</ul>
+<p>The Developer does not directly collect personal information such as name, address, or phone number.</p>
+
+<h2>2. Data Storage and Processing</h2>
+<p>Videos, images, and text handled by this app are processed primarily on the user’s device. They are not uploaded to the Developer’s external servers.</p>
+
+<h2>3. Third-Party Sharing</h2>
+<p>SakuSen does NOT:</p>
+<ul>
+  <li>Send user data to external servers</li>
+  <li>Share information with advertising networks</li>
+  <li>Use SDKs for tracking purposes</li>
+</ul>
+
+<h2>4. In-App Purchases</h2>
+<p>All payments are handled securely by Apple’s StoreKit. The Developer does not receive any billing information.</p>
+
+<h2>5. User Rights</h2>
+<p>Users may delete their projects and exported data at any time. Uninstalling the app will remove locally stored app data from the device.</p>
+
+<h2>6. Policy Changes</h2>
+<p>This policy may be updated as necessary. Significant changes will be announced within the app or on the store page.</p>
+
+<h2>7. Contact</h2>
+<p>メール：takepenco&#64;gmail&#46;com</p>
+</div>
+
 </body>
 </html>
