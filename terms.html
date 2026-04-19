@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サク宣 利用規約 / Terms of Use</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 760px;
+    padding: 0 20px;
+    color: #333;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 1rem; }
+  h2 { margin-top: 2rem; font-size: 1.3rem; border-left: 4px solid #6c8; padding-left: 8px; }
+  .lang-switch {
+    margin-bottom: 30px;
+  }
+  .lang-switch button {
+    padding: 6px 14px;
+    margin-right: 8px;
+    border: 1px solid #bbb;
+    background: #f7f7f7;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .lang-switch button.active {
+    background: #6c8;
+    color: #fff;
+    border-color: #6c8;
+  }
+</style>
+<script>
+  function switchLang(lang) {
+    document.getElementById("ja").style.display = lang === "ja" ? "block" : "none";
+    document.getElementById("en").style.display = lang === "en" ? "block" : "none";
+    document.getElementById("btn-ja").classList.toggle("active", lang === "ja");
+    document.getElementById("btn-en").classList.toggle("active", lang === "en");
+  }
+</script>
+</head>
+<body>
 
+<div class="lang-switch">
+  <button id="btn-ja" class="active" onclick="switchLang('ja')">日本語</button>
+  <button id="btn-en" onclick="switchLang('en')">English</button>
+</div>
+
+<!-- ▼ 日本語版 -->
+<div id="ja">
+<h1>サク宣 利用規約</h1>
+<p>最終更新日：2026年4月</p>
+
+<p>この利用規約（以下「本規約」）は、サク宣 / SakuSen（以下「本アプリ」）の利用条件を定めるものです。ユーザーは、本アプリを利用することにより、本規約に同意したものとみなされます。</p>
+
+<h2>1. 本アプリについて</h2>
+<p>本アプリは、動画の簡易編集および書き出しを補助するツールです。</p>
+
+<h2>2. ユーザーの責任</h2>
+<p>ユーザーは、本アプリを利用して作成・公開するコンテンツについて、自らの責任で権利確認を行うものとします。</p>
+<ul>
+  <li>第三者の著作権</li>
+  <li>商標権</li>
+  <li>肖像権</li>
+  <li>個人情報</li>
+</ul>
+
+<h2>3. 禁止事項</h2>
+<p>ユーザーは、以下の行為をしてはなりません。</p>
+<ul>
+  <li>法令または公序良俗に反する行為</li>
+  <li>第三者の権利を侵害する行為</li>
+  <li>本アプリの運営を妨げる行為</li>
+</ul>
+
+<h2>4. アプリ内課金</h2>
+<p>本アプリには、買い切り型のアプリ内課金が含まれる場合があります。課金処理は Apple により行われます。</p>
+
+<h2>5. 免責事項</h2>
+<p>本アプリは現状有姿で提供されます。開発者は、本アプリの完全性、正確性、継続性について保証しません。</p>
+<p>本アプリの利用により生じた損害について、開発者は故意または重過失がある場合を除き責任を負いません。</p>
+
+<h2>6. 本規約の変更</h2>
+<p>本規約は必要に応じて変更されることがあります。重要な変更がある場合は、アプリ内またはストアページ等で告知します。</p>
+
+<h2>7. お問い合わせ</h2>
+<p>メール：takepenco&#64;gmail&#46;com</p>
+</div>
+
+<!-- ▼ 英語版 -->
+<div id="en" style="display:none;">
+<h1>SakuSen Terms of Use</h1>
+<p>Last Updated: April 2026</p>
+
+<p>These Terms of Use (“Terms”) govern the use of SakuSen (“the App”). By using the App, you agree to these Terms.</p>
+
+<h2>1. About the App</h2>
+<p>The App is a tool that helps users create and export simple promotional videos.</p>
+
+<h2>2. User Responsibility</h2>
+<p>Users are solely responsible for confirming the rights of any content they create, edit, or publish using the App.</p>
+<ul>
+  <li>Copyrights of third parties</li>
+  <li>Trademarks</li>
+  <li>Portrait / publicity rights</li>
+  <li>Personal information</li>
+</ul>
+
+<h2>3. Prohibited Conduct</h2>
+<p>Users must not engage in the following:</p>
+<ul>
+  <li>Acts that violate laws or public order and morals</li>
+  <li>Acts that infringe the rights of third parties</li>
+  <li>Acts that interfere with the operation of the App</li>
+</ul>
+
+<h2>4. In-App Purchases</h2>
+<p>The App may include one-time in-app purchases. Payment processing is handled by Apple.</p>
+
+<h2>5. Disclaimer</h2>
+<p>The App is provided “as is.” The Developer makes no warranty regarding completeness, accuracy, or continued availability.</p>
+<p>The Developer shall not be liable for damages arising from use of the App, except in cases of willful misconduct or gross negligence.</p>
+
+<h2>6. Changes to These Terms</h2>
+<p>These Terms may be updated as necessary. Significant changes will be announced within the App or on the store page.</p>
+
+<h2>7. Contact</h2>
+<p>mail：takepenco&#64;gmail&#46;com</p>
+</div>
+
+</body>
+</html>
