@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート / Support | サク宣</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 760px;
+    padding: 0 20px;
+    color: #333;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 1rem; }
+  h2 { margin-top: 2rem; font-size: 1.3rem; border-left: 4px solid #6c8; padding-left: 8px; }
+  .lang-switch {
+    margin-bottom: 30px;
+  }
+  .lang-switch button {
+    padding: 6px 14px;
+    margin-right: 8px;
+    border: 1px solid #bbb;
+    background: #f7f7f7;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .lang-switch button.active {
+    background: #6c8;
+    color: #fff;
+    border-color: #6c8;
+  }
+</style>
+<script>
+  function switchLang(lang) {
+    document.getElementById("ja").style.display = lang === "ja" ? "block" : "none";
+    document.getElementById("en").style.display = lang === "en" ? "block" : "none";
+    document.getElementById("btn-ja").classList.toggle("active", lang === "ja");
+    document.getElementById("btn-en").classList.toggle("active", lang === "en");
+  }
+</script>
+</head>
+<body>
 
+<div class="lang-switch">
+  <button id="btn-ja" class="active" onclick="switchLang('ja')">日本語</button>
+  <button id="btn-en" onclick="switchLang('en')">English</button>
+</div>
+
+<!-- ▼ 日本語版 -->
+<div id="ja">
+<h1>サク宣 サポート</h1>
+<p>最終更新日：2026年4月</p>
+
+<p>サク宣 / SakuSen に関するお問い合わせ、不具合報告、ご意見は以下までご連絡ください。</p>
+
+<h2>お問い合わせ先</h2>
+<p>メール：takepenco&#64;gmail&#46;com</p>
+
+<h2>お問い合わせ時にあると助かる情報</h2>
+<ul>
+  <li>ご利用中の機種名</li>
+  <li>iOS のバージョン</li>
+  <li>アプリのバージョン</li>
+  <li>問題が起きた手順</li>
+  <li>可能であればスクリーンショット</li>
+</ul>
+
+<h2>関連ページ</h2>
+<ul>
+  <li><a href="./privacy.html">プライバシーポリシー</a></li>
+  <li><a href="./terms.html">利用規約</a></li>
+</ul>
+</div>
+
+<!-- ▼ 英語版 -->
+<div id="en" style="display:none;">
+<h1>SakuSen Support</h1>
+<p>Last Updated: April 2026</p>
+
+<p>For inquiries, bug reports, or feedback regarding SakuSen, please contact us below.</p>
+
+<h2>Contact</h2>
+<p>mail：takepenco&#64;gmail&#46;com</p>
+
+<h2>Helpful Information for Support Requests</h2>
+<ul>
+  <li>Your device model</li>
+  <li>Your iOS version</li>
+  <li>The app version</li>
+  <li>Steps to reproduce the issue</li>
+  <li>A screenshot, if available</li>
+</ul>
+
+<h2>Related Pages</h2>
+<ul>
+  <li><a href="./privacy.html">Privacy Policy</a></li>
+  <li><a href="./terms.html">Terms of Use</a></li>
+</ul>
+</div>
+
+</body>
+</html>
